@@ -91,34 +91,23 @@ void vendor_load_properties()
         property_override(prop_name.c_str(), value.c_str(), false);
     };
 
-    if (bootloader.find("I9301I") == 0) {
-        /* s3ve3gds */
+    if (bootloader.find("G7105") == 0) {
+        /* ms01ltexx */
         for (const auto &source : ro_product_props_default_source_order) {
-	  set_ro_product_prop(source, "fingerprint", "samsung/s3ve3gds/s3ve3g:4.4.2/KOT49H/I9301IXXUANL1:user/release-keys");
-	  set_ro_product_prop(source, "model", "GT-I9301I");
-	  set_ro_product_prop(source, "device", "s3ve3g");
+	  set_ro_product_prop(source, "fingerprint", "samsung/ms01ltexx/ms01lte:4.4.2/KOT49H/G7105XXUBNI2:user/release-keys");
+	  set_ro_product_prop(source, "model", "SM-G7105");
+	  set_ro_product_prop(source, "device", "ms01lte");
 	  }
-        property_override("ro.build.description", "s3ve3gds-user 4.4.2 KOT49H I9301IXXUANL1 release-keys");
+        property_override("ro.build.description", "ms01ltexx-user 4.4.2 KOT49H G7105XXUBNI2 release-keys");
         gsm_properties();
-    } else if (bootloader.find("I9301Q") == 0) {
-        /* s3ve3gjv */
+    } else if (bootloader.find("G7102") == 0) {
+        /* ms013gxx */
         for (const auto &source : ro_product_props_default_source_order) {
-	  set_ro_product_prop(source, "fingerprint", "samsung/s3ve3gjv/s3ve3g:4.4.2/KOT49H/I9301QXXUANH1:user/release-keys");
-	  set_ro_product_prop(source, "model", "GT-I9301Q");
-	  set_ro_product_prop(source, "device", "s3ve3gjv");
+	  set_ro_product_prop(source, "fingerprint", "samsung/ms013gxx/ms013g:4.4.2/KOT49H/G7102XXUBOB1:user/release-keys");
+	  set_ro_product_prop(source, "model", "SM-G7102");
+	  set_ro_product_prop(source, "device", "ms013g");
 	  }
-        property_override("ro.build.description", "samsung/s3ve3gjv/s3ve3g:4.4.2/KOT49H/I9301QXXUANH1:user/release-keys");
-        gsm_properties();
-    } else if (bootloader.find("I9300I") == 0) {
-        /* s3ve3gdsds */
-        for (const auto &source : ro_product_props_default_source_order) {
-	  set_ro_product_prop(source, "fingerprint", "samsung/s3ve3gdsxx/s3ve3gds:4.4.4/KTU84P/I9300IXWUBNJ1:user/release-keys");
-	  set_ro_product_prop(source, "model", "GT-I9300I");
-	  set_ro_product_prop(source, "device", "s3ve3gds");
-	  }
-        property_override("ro.build.description", "s3ve3gdsxx-user 4.4.4 KTU84P I9300IXWUBNJ1 release-keys");
-        gsm_properties();
-    } else {
+        property_override("ro.build.description", "ms013gxx-user 4.4.2 KOT49H G7102XXUBOB1 release-keys");
         gsm_properties();
     }
 
