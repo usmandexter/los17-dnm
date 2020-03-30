@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_s3ve3gds.mk
+    $(LOCAL_DIR)/lineage_ms013g.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_s3ve3gds-user \
