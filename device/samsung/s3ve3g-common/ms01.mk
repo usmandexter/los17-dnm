@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
 
 # Get non-open-source specific aspects
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
-$(call inherit-product-if-exists, vendor/samsung/s3ve3g-common/s3ve3g-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/ms01-common/ms01-common-vendor.mk)
 
 # common msm8226
 $(call inherit-product, device/samsung/msm8226-common/msm8226.mk)
